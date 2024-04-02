@@ -6,7 +6,7 @@ Library    RequestsLibrary
 *** Variables ***
 ${one_mail}
 ${username}
-${domain}
+${domain_name}
 
 *** Test Cases ***
 Create Inbox
@@ -15,7 +15,7 @@ Create Inbox
     ${response}=                     Get On Session    one_sec_mail    ?action\=genRandomMailbox&count\=1
     ${res_json}=                     Set Variable                  ${response.json()}
     ${one_mail}=                     Set Variable                  ${res_json}[0]
-    ${one_mail_split]}=                     Split String                  ${one_mail}    @
+    ${one_mail_split}=                     Split String                  ${one_mail}    @
     ${username}=                     Set Variable                  ${one_mail_split}[0]
     ${domain}=                       Set Variable                  ${one_mail_split}[1]
 
