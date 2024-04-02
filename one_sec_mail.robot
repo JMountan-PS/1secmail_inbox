@@ -3,6 +3,10 @@ Library                   Collections
 Library                   String
 Library                   RequestsLibrary
 
+*** Comments ***
+https://www.1secmail.com/api/
+Use this for a throw-away inbox that does not require UI interactions
+
 *** Variables ***
 ${one_mail}
 ${username}
