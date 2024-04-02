@@ -6,7 +6,7 @@ Library    RequestsLibrary
 *** Variables ***
 ${one_mail}
 ${username}
-${domain_name}
+${domain}
 
 *** Test Cases ***
 Create Inbox
